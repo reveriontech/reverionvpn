@@ -266,3 +266,13 @@ All donations support continued development. Thanks!
 Algo is licensed and distributed under the AGPLv3. If you want to distribute a closed-source modification or service based on Algo, then please consider <a href="mailto:opensource@trailofbits.com">purchasing an exception</a> . As with the methods above, this will help support continued development.
 # reverionvpn
 # reverionvpn
+
+cd ~/algo
+source .env/bin/activate
+
+python3 -m virtualenv --python="$(command -v python3)" .env &&
+      source .env/bin/activate &&
+      python3 -m pip install -U pip virtualenv &&
+      python3 -m pip install -r requirements.txt
+
+run with './algo'
